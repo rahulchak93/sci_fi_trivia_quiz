@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
+    <title>Sci-Fi Trivia Quiz</title>
+</head>
+<body>
+    <!--navbar content-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item active">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="quizzes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Quizzes
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./star_wars.html">Star Wars</a>
+                                <a class="dropdown-item" href="./futurama.html">Futurama</a>
+                                <a class="dropdown-item" href="./rick_and_morty.html">Rick and Morty</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Modal result-->
+    <div id="resultModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Result </h4>
+                    <button type="button" id="closeResultModal" class="close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="resultContent"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--main page body content-->
+    <div style="background-image:url('img/galaxy-wallpaper-11.jpg')">
+        <div class="container">
+            <div class="space"></div>
+
+            <!--each card is a question-->
+            <!--q1-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="FQ1" src="img/FQ1.jpg" height="500" width="100">
+                        <div class="card-body">
+                            <p>
+                                What is Bender's most frequently uttered word?
+                                <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                    <label id="lfq11" class="btn btn-warning btn-sm active">
+                                        <input type="radio" name="fq11" id="fq11" autocomplete="off" checked> Chump
+                                    </label>
+                                    <label id="lfq12" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq12" id="fq12" autocomplete="off"> Shiny
+                                    </label>
+                                    <label id="lfq13" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq13" id="fq13" autocomplete="off"> Ass
+                                    </label>
+                                    <label id="lfq14" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq14" id="fq14" autocomplete="off"> Bite
+                                    </label>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q2-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+
+                    <div class="card">
+                        <img class="card-img-top" alt="FQ2" src="img/FQ2.jpg" height="500" width="100">
+                        <div class="card-body">
+                            <p>
+                                Why is Fry immune to the Brainspawn's stupification fields?
+                                <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                    <label id="lfq21" class="btn btn-warning btn-sm active">
+                                        <input type="radio" name="fq21" id="fq21" autocomplete="off" checked> He lacks intelligence
+                                    </label>
+
+                                    <label id="lfq22" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq22" id="fq22" autocomplete="off"> He is from the 20th Century
+                                    </label>
+
+                                    <label id="lfq23" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq23" id="fq23" autocomplete="off"> He was drunk
+                                    </label>
+
+                                    <label id="lfq24" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq24" id="fq24" autocomplete="off"> He is his own grandfather
+                                    </label>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q3-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+
+                    <div class="card">
+                        <img class="card-img-top" alt="FQ3" src="img/FQ3.jpg" height="500" width="100">
+                        <div class="card-body">
+                            <p>
+                                What is the name of Zoidberg's girlfriend?
+                                <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                    <label id="lfq31" class="btn btn-warning btn-sm active">
+                                        <input type="radio" name="fq31" id="fq31" autocomplete="off" checked> Edna
+                                    </label>
+
+                                    <label id="lfq32" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq32" id="fq32" autocomplete="off"> Marianne
+                                    </label>
+
+                                    <label id="lfq33" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq33" id="fq33" autocomplete="off"> Zindy
+                                    </label>
+
+                                    <label id="lfq34" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq34" id="fq34" autocomplete="off"> Carol
+                                    </label>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q4-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+
+                    <div class="card">
+                        <img class="card-img-top" alt="FQ4" src="img/FQ4.png" height="500" width="100">
+                        <div class="card-body">
+                            <p> What song does Fry listen to while playing real life Space Invaders with Lrrr? </p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lfq41" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="fq41" id="fq41" autocomplete="off" checked> Tom Sawyer by Rush
+                                </label>
+
+                                <label id="lfq42" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="fq42" id="fq42" autocomplete="off"> Highway Star by Deep Purple
+                                </label>
+
+                                <label id="lfq43" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="fq43" id="fq43" autocomplete="off"> Sabotage by Beastie Boys
+                                </label>
+
+                                <label id="lfq44" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="fq44" id="fq44" autocomplete="off"> Major Tom by Peter Schilling
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q5-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+
+                    <div class="card">
+                        <img class="card-img-top" alt="FQ5" src="img/FQ5.jpg" height="500" width="100">
+                        <div class="card-body">
+                            <p>
+                                Who is Professor Farnsworth's successor?
+                                <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                    <label id="lfq51" class="btn btn-warning btn-sm active">
+                                        <input type="radio" name="fq51" id="fq51" autocomplete="off" checked> Floyd Farnsworth
+                                    </label>
+
+                                    <label id="lfq52" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq52" id="fq52" autocomplete="off"> Cubert Farnsworth
+                                    </label>
+
+                                    <label id="lfq53" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq53" id="fq53" autocomplete="off"> Zapp Brannigan
+                                    </label>
+
+                                    <label id="lfq54" class="btn btn-warning btn-sm">
+                                        <input type="radio" name="fq54" id="fq54" autocomplete="off"> David Farnsworth
+                                    </label>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--submit button-->
+            <div class="text-center">
+                <button id="submitF" type="button" class="submit" onclick="evalFQuiz()">Submit</button>
+            </div>
+            <div class="space"></div>
+
+        </div>
+    </div>
+
+    <!--footer content-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto text-align-center">
+                    <p>
+                        © Star Wars. Created by George Lucas. Lucasfilm. Disney. 2019.
+                    </p>
+                    <p>
+                        © Futurama. Created by David X. Cohen, Matt Groening. 20th Century Fox. 2019.
+                    </p>
+                    <p>
+                        © Rick and Morty. Created by Dan Harmon, Justin Roiland. Adult Swim. 2019.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

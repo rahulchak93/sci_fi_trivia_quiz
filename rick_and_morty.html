@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+    <title>Sci-Fi Trivia Quiz</title>
+</head>
+<body>
+
+    <!--navbar content-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item active">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="quizzes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Quizzes
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./star_wars.html">Star Wars</a>
+                                <a class="dropdown-item" href="./futurama.html">Futurama</a>
+                                <a class="dropdown-item" href="./rick_and_morty.html">Rick and Morty</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Modal result-->
+    <div id="resultModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Result </h4>
+                    <button type="button" id="closeResultModal" class="close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="resultContent"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--main page body-->
+    <div style="background-image:url('img/galaxy-wallpaper-11.jpg')">
+        <div class="container">
+            <div class="space"></div>
+
+            <!--quiz questions in each card-->
+            <!--q1-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="RMQ1" src="img/RMQ1.png" height="500" width="100">
+                        <div class="card-body">
+                            <p> What's the name of Rick's humanoid experiment? </p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lrmq11" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="rmq11" id="rmq11" autocomplete="off" checked> Adraham Hincon
+                                </label>
+                                <label id="lrmq12" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq12" id="rmq12" autocomplete="off"> Toothbrush Mustache
+                                </label>
+                                <label id="lrmq13" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq13" id="rmq13" autocomplete="off"> Black Hat
+                                </label>
+                                <label id="lrmq14" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq14" id="rmq14" autocomplete="off"> Abradolf Lincler
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q2-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="RMQ2" src="img/RMQ2.png" height="500" width="100">
+                        <div class="card-body">
+                            <p> In the episode "The Ricklantis Mixup", which universe is the pissed-off factory worker Rick from? </p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lrmq21" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="rmq21" id="rmq21" autocomplete="off" checked> J-18
+                                </label>
+                                
+                                <label id="lrmq22" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq22" id="rmq22" autocomplete="off"> J-22
+                                </label>
+                                
+                                <label id="lrmq23"class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq23" id="rmq23" autocomplete="off"> C-97
+                                </label>
+                                
+                                <label id="lrmq24" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq24" id="rmq24" autocomplete="off"> D-138
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q3-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="RMQ3" src="img/RMQ3.jpg" height="500" width="100">
+                        <div class="card-body">
+                            <p> What's the name of detoxified Morty's girlfriend? </p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lrmq31" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="rmq31" id="rmq31" autocomplete="off" checked> Jacqueline
+                                </label>
+                                
+                                <label id="lrmq32" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq32" id="rmq32" autocomplete="off"> Jessica
+                                </label>
+                                
+                                <label id="lrmq33" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq33" id="rmq33" autocomplete="off"> Stacy
+                                </label>
+                                
+                                <label id="lrmq34" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq34" id="rmq34" autocomplete="off"> Annie
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q4-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="RMQ4" src="img/RMQ4.jpg" height="500" width="100">
+                        <div class="card-body">
+                            <p> In "Interdimensional Cable 2: Tempting Fate", what is the advertisement Jerry sees after waking up in the alien hospital? </p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lrmq41" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="rmq41" id="rmq41" autocomplete="off" checked> Butthole Ice Cream
+                                </label>
+                                
+                                <label id="lrmq42" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq42" id="rmq42" autocomplete="off"> Lil' Bits
+                                </label>
+                                
+                                <label id="lrmq43"class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq43" id="rmq43" autocomplete="off"> Fake Doors
+                                </label>
+                                
+                                <label id="lrmq44" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq44" id="rmq44" autocomplete="off"> Turbulent Juice
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q5-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="RMQ5" src="img/RMQ5.jpg" height="500" width="100">
+                        <div class="card-body">
+                            <p> What does Rick crave for? </p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lrmq51" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="rmq51" id="rmq51" autocomplete="off" checked> Simple Rick's Wafers
+                                </label>
+                                
+                                <label id="lrmq52" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq52" id="rmq52" autocomplete="off"> Eye holes cereal
+                                </label>
+                                
+                                <label id="lrmq53" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq53" id="rmq53" autocomplete="off"> McDonald's Szechuan Sauce
+                                </label>
+                                
+                                <label id="lrmq54" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="rmq54" id="rmq54" autocomplete="off"> Strawberry Smiggles
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--submit button-->
+            <div class="text-center">
+                <button type="button" id="submitRM" class="submit" onclick="evalRMQuiz()">Submit</button>
+            </div>
+            <div class="space"></div>
+        </div>
+    </div>
+
+    <!--footer content-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto text-align-center">
+                    <p>
+                        © Star Wars. Created by George Lucas. Lucasfilm. Disney. 2019.
+                    </p>
+                    <p>
+                        © Futurama. Created by David X. Cohen, Matt Groening. 20th Century Fox. 2019.
+                    </p>
+                    <p>
+                        © Rick and Morty. Created by Dan Harmon, Justin Roiland. Adult Swim. 2019.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

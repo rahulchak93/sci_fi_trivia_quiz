@@ -1,0 +1,58 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+
+.footer {
+  background-color: #B3B3BB;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  background-image: url(img/galaxy-wallpaper-11.jpg); }
+
+.navbar-dark {
+  background-color: #161883;
+  font-family: 'Comic Sans MS'; }
+
+.modal-header {
+  background: #161883;
+  color: floralwhite;
+  font-family: 'Comic Sans MS'; }
+  .modal-header .close {
+    color: #B3B3BB; }
+
+.modal-body {
+  background: #B3B3BB;
+  font-family: 'Comic Sans MS'; }
+
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px; }
+
+.space {
+  margin: 0;
+  padding: 0;
+  height: 50px; }
+
+.submit {
+  background-color: #00BFFF;
+  border: none;
+  color: white;
+  padding: 20px 44px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-family: 'Comic Sans MS'; }

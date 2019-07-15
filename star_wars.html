@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+    <title>Sci-Fi Trivia Quiz</title>
+</head>
+<body>
+
+    <!--navbar content-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item active">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="quizzes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Quizzes
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./star_wars.html">Star Wars</a>
+                                <a class="dropdown-item" href="./futurama.html">Futurama</a>
+                                <a class="dropdown-item" href="./rick_and_morty.html">Rick and Morty</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Modal result-->
+    <div id="resultModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Result </h4>
+                    <button type="button" id="closeResultModal" class="close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="resultContent"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--main page body-->
+    <div style="background-image:url('img/galaxy-wallpaper-11.jpg')">
+        <div class="container">
+            <div class="space"></div>
+
+            <!--quiz questions in each card-->
+            <!--q1-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="SWQ1" src="img/SWQ1.jpeg" height="500" width="100">
+                        <div class="card-body">
+                            <p> What is the name of Han Solo's home planet? </p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lswq11" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="swq11" id="swq11" autocomplete="off checked"> Alderaan
+                                </label>
+                                <label id="lswq12" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq12" id="swq12" autocomplete="off"> Corellia
+                                </label>
+                                <label id="lswq13" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq13" id="swq13" autocomplete="off"> Coruscant
+                                </label>
+                                <label id="lswq14" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq14" id="swq14" autocomplete="off"> Kashyyk
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q2-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="SWQ2" src="img/SWQ2.jpg" height="500" width="100">
+                        <div class="card-body">
+                            <p> In how many of the films, does Darth Sidious/Senator Palaptine appear? </p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lswq21" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="swq21" id="swq21" autocomplete="off" checked> 3
+                                </label>
+                                <label id="lswq22" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq22" id="swq22" autocomplete="off"> 4
+                                </label>
+                                <label id="lswq23" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq23" id="swq23" autocomplete="off"> 5
+                                </label>
+                                <label id="lswq24" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq24" id="swq24" autocomplete="off"> 6
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q3-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="SWQ3" src="img/SWQ3.png" height="500" width="100">
+                        <div class="card-body">
+                            <p> Which year did the television series, <b><i>Star Wars: The Clone Wars</i></b> air?</p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lswq31" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="swq31" id="swq31" autocomplete="off" checked> 2003
+                                </label>
+                                <label id="lswq32" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq32" id="swq32" autocomplete="off"> 2005
+                                </label>
+                                <label id="lswq33" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq33" id="swq33" autocomplete="off"> 2008
+                                </label>
+                                <label id="lswq34" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq34" id="swq34" autocomplete="off"> 2009
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q4-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="SWQ4" src="img/SWQ4.jpg" height="500" width="100">
+                        <div class="card-body">
+                            <p> Which game did Han Solo play to win the <i>Millennium Falcon</i> from Lando Calrissian?</p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lswq41" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="swq41" id="swq41" autocomplete="off" checked> Sabacc
+                                </label>
+                                <label id="lswq42" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq42" id="swq42" autocomplete="off"> Dejarik
+                                </label>
+                                <label id="lswq43" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq43" id="swq43" autocomplete="off"> Pod Racing
+                                </label>
+                                <label id="lswq44" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="swq44" id="swq44" autocomplete="off"> Not Mentioned
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--q5-->
+            <div class="row align-items-center">
+                <div class="offest-1 col-10 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top" alt="SWQ5" src="img/SWQ5.jpeg" height="500" width="100">
+                        <div class="card-body">
+                            <p> Which one of these Jedis were killed by Order 66? </p>
+                            <div class="btn-group-vertical btn-group-toggle col-12" data-toggle="buttons">
+                                <label id="lswq51" class="btn btn-warning btn-sm active">
+                                    <input type="radio" name="radio" id="swq51" autocomplete="off" checked> Count Dooku
+                                </label>
+                                <label id="lswq52" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="radio" id="swq52" autocomplete="off"> General Grevious
+                                </label>
+                                <label id="lswq53" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="radio" id="swq53" autocomplete="off"> Carth Onasi
+                                </label>
+                                <label id="lswq54" class="btn btn-warning btn-sm">
+                                    <input type="radio" name="radio" id="swq54" autocomplete="off"> Aayla Secura
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+
+            <!--submit button-->
+            <div class="text-center">
+                <button type="button" id="submitSW" class="submit" onclick="evalSWQuiz()">Submit</button>
+            </div>
+            <div class="space"></div>
+        </div>
+    </div>
+
+    <!--footer content-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto text-align-center">
+                    <p>
+                        © Star Wars. Created by George Lucas. Lucasfilm. Disney. 2019.
+                    </p>
+                    <p>
+                        © Futurama. Created by David X. Cohen, Matt Groening. 20th Century Fox. 2019.
+                    </p>
+                    <p>
+                        © Rick and Morty. Created by Dan Harmon, Justin Roiland. Adult Swim. 2019.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+    <title>Sci-Fi Trivia Quiz</title>
+</head>
+<body>
+
+    <!--Navbar content-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="quizzes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Quizzes
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./star_wars.html">Star Wars</a>
+                                <a class="dropdown-item" href="./futurama.html">Futurama</a>
+                                <a class="dropdown-item" href="./rick_and_morty.html">Rick and Morty</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--main page body-->
+    <div style="background-image:url('img/galaxy-wallpaper-11.jpg')">
+        <div class="container">
+            <div class="space"></div>
+            <!--Card stuff-->
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <div class="card">
+                        <img class="card-img-top" src="img/merged.jpg" alt="Card image cap" height="500" width="100">
+                        <div class="card-body">
+                            <h3> How much do you know about the 10 movies of the galaxy far far away, life in the 31st century and Ricky and Morty's interdimensional adventures. Take these 3 quizzes to find out. </h3>
+                            <h3 class="text-danger">Warning: If you are not upto date with any of the movies or TV shows, there might be spoilers!!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+    </div>
+
+    <!--footer content-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto text-align-center">
+                    <p>
+                        © Star Wars. Created by George Lucas. Lucasfilm. Disney. 2019.
+                    </p>
+                    <p>
+                        © Futurama. Created by David X. Cohen, Matt Groening. 20th Century Fox. 2019.
+                    </p>
+                    <p>
+                        © Rick and Morty. Created by Dan Harmon, Justin Roiland. Adult Swim. 2019.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
